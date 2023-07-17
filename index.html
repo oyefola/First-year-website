@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="author" content="Folademilade Oyeleke" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="This is the welcome page of my portfolio website. It displays some basic information about me."
+    />
+    <!-- The description meta tag was included to improve search engine optimization -->
+
+    <link rel="stylesheet" href="./css/mywebsite.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="body-container-side-padding">
+      <div class="logo-images">
+        <!-- the code below makes the logo a button to go back to the home page.-->
+        <a href="/index.html">
+          <img
+            src="./images/fo-15.svg"
+            alt="A logo of the author's Initials,F.O"
+            role="img"
+            class="white-logo"
+          />
+          <img
+            src="./images/fo-14.svg"
+            alt="A logo of the author's Initials,F.O but in a darker colour."
+            role="img"
+            class="black-logo"
+          />
+        </a>
+
+        <!-- This image is the same as the one above but in a different colour it and will be styled in the css file to only be displayed when the user 
+         hovers over the site logo. -->
+        <!-- svg images were used to enable the logo load fast,take up less space and still display in high resolution. -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./html/Degree_program.html">Degree Programme</a></li>
+          <li><a href="./html/SGA_and_mySkills.html">SGA and mySkills</a></li>
+          <li><a href="./html/quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="welcome-section"
+        class="body-container-side-padding body-container-top-padding"
+      >
+        <div id="welcome-section-wrapper">
+          <div id="profile-pic">
+            <img
+              src="./images/mypicture.jpeg"
+              alt="A picture of the author in a pink top"
+            />
+          </div>
+          <div id="text-container-wrapper">
+            <article class="textbox-top">
+              <h2 id="welcome">Welcome!</h2>
+              <p id="text">
+                Hi there!<br />
+                My name is Folademilade, and I'm from Lagos, Nigeria. I'm
+                currently in my first year of studying computer science at the
+                University of Sheffield. I'm passionate about using technology
+                to solve problems and make people's lives easier. In my spare
+                time, I enjoy reading, playing video games, and spending time
+                with my friends and family. I'm excited to see what the future
+                holds for me and my career in computer science!
+              </p>
+            </article>
+            <article class="textbox-bottom">
+              <h2 id="fun-facts">Fun Facts about me</h2>
+              <ul id="facts">
+                <li>I love the colour Purple</li>
+                <li>I am a member of the computer science society</li>
+                <li>
+                  I love learning about different cultures and thier languages.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div
+        id="educational-background-wrapper"
+        class="body-container-side-padding"
+      >
+        <article id="educational-background">
+          <h2 id="educational-background-heading">My Educational background</h2>
+          <p id="educational-background-content">
+            I attended Aunty Ayo International School for my primary and
+            secondary education, located in Lagos, Nigeria. After that, I began
+            a foundation degree for medicine at the University of Lagos but
+            eventually found that my real passion was in computer science. So, I
+            completed a foundation year for computer science at Oxbridge
+            Tutorial college in Lagos, Nigeria and I am currently enrolled at
+            the University of Sheffield for my degree in computer science. If
+            you want to know more about the modules I am taking, please select
+            the "Degree programme" option from the main menu.
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+  <footer class="body-container-side-padding">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="./html/Accessibilty.html">Acessibility</a></li>
+        <li><a href="./html/Legal and security.html">Legal and Security</a></li>
+        <li><a href="./html/Design.html">Design</a></li>
+        <li><a href="./html/Testing.html">Testing</a></li>
+        <li><a href="./html/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="footer-text">&copy; Copyright, Folademilade Oyeleke, 2022</p>
+  </footer>
+</html>
