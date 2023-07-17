@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="author" content="Folademilade Oyeleke" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta
+      name="description"
+      content="This page contains the author's contact information and a form fo renquiries or comments"
+    />
+    <link rel="stylesheet" href="../css/mywebsite.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="body-container-side-padding">
+      <div class="logo-images">
+        <!-- the code below makes the logo a button to go back to the home page.-->
+        <a href="../index.html">
+          <img
+            src="../images/fo-15.svg"
+            alt="A logo of the author's Initials,F.O"
+            role="img"
+            class="white-logo"
+          />
+          <img
+            src="../images/fo-14.svg"
+            alt="A logo of the author's Initials,F.O but in a darker colour."
+            role="img"
+            class="black-logo"
+          />
+        </a>
+
+        <!-- This image is the same as the one above but in a different colour it and will be styled in the css file to only be displayed when the user 
+           hovers over the site logo. -->
+        <!-- svg images were used to enable the logo load fast,take up less space and still display in high resolution. -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Degree_program.html">Degree Programme</a></li>
+          <li><a href="SGA_and_mySkills.html">SGA and mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contact-wrapper" class="body-container-side-padding">
+        <div id="contact-information-container">
+          <article id="contact-information">
+            <h2 id="contact-information-heading">Contact me!</h2>
+            <ul id="contact-information-content">
+              <p>👩🏾: Folademilade Oyeleke, Computer science student</p>
+              <p>📧: foyeleke1@sheffield.ac.uk</p>
+              <p>
+                📍: Regent Court, The University of, 211 Portobello, Sheffield
+                City Centre, Sheffield S1 4DP
+              </p>
+            </ul>
+          </article>
+        </div>
+        <div id="contact-form-wrapper">
+          <form id="contact-form">
+            <h2 id="form-heading">Contact Form</h2>
+            <ul>
+              <li>
+                <label for="name">Name: </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Input your name here.(optional)"
+                />
+              </li>
+              <li>
+                <label for="email">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Input your email here."
+                  required
+                />
+              </li>
+              <li>
+                <label for="message">Enquiry/comment:</label>
+                <textarea
+                  name="message"
+                  placeholder="Input your Enquiry here."
+                  id="message"
+                  rows="5"
+                ></textarea>
+              </li>
+            </ul>
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="body-container-side-padding">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="Accessibilty.html">Acessibility</a></li>
+          <li><a href="Legal and security.html">Legal and Security</a></li>
+          <li><a href="Design.html">Design</a></li>
+          <li><a href="Testing.html">Testing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="footer-text">&copy; Copyright, Folademilade Oyeleke, 2022</p>
+    </footer>
+  </body>
+</html>

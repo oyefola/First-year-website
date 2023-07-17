@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title> Quiz</title>
+    <meta name="author" content="Folademilade Oyeleke" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta
+      name="description"
+      content="This is the quiz page, it test the user's knowledge of the author "
+    />
+    <!-- The description meta tag was included to improve search engine optimization -->
+
+    <link rel="stylesheet" href="../css/mywebsite.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="body-container-side-padding">
+      <div class="logo-images">
+        <!-- the logo links to the home page -->
+        <a href="../index.html">
+          <img
+            src="../images/fo-15.svg"
+            alt="A logo of the author's Initials,F.O"
+            role="img"
+            class="white-logo"
+          />
+          <img
+            src="../images/fo-14.svg"
+            alt="A logo of the author's Initials,F.O but in a darker colour."
+            role="img"
+            class="black-logo"
+          />
+        </a>
+
+        <!-- This image is the same as the one above but in a different colour it and will be styled in the css file to only be displayed when the user 
+       hovers over the site logo. -->
+        <!-- svg images were used to enable the logo load fast,take up less space and still display in high resolution. -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Degree_program.html">Degree Programme</a></li>
+          <li><a href="SGA_and_mySkills.html">SGA and mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="quiz-wrapper body-container-side-padding body-container-top-padding"
+      >
+        <div class="quiz-heading">
+          <h1>Quiz page</h1>
+          <p>
+            How much do you know about me? Test your knowledge with this quiz!
+          </p>
+        </div>
+        <form class="quiz-form">
+          <ul>
+            <li class="quiz-question">
+              <div class="image">
+                <img
+                  class="image-pic"
+                  src="../images/a picture of the africa continent map .png"
+                  alt="A picture of the african continent"
+                />
+                <div class="image-overlay">
+                  <p class="image-answer">Lagos, Nigeria 🇳🇬</p>
+                </div>
+              </div>
+              <label for="ethnicity">Where am I from?</label>
+              <ul>
+                <li>
+                  <input type="radio" name="ethnicity" value="Dakar" />Dakar,
+                  Senegal 🇸🇳
+                </li>
+                <li>
+                  <input type="radio" name="ethnicity" value="Lagos" />Lagos,
+                  Nigeria 🇳🇬
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="ethnicity"
+                    value="Johannesburg"
+                  />Johannesburg, South Africa 🇿🇦
+                </li>
+              </ul>
+            </li>
+            <li class="quiz-question">
+              <div class="image">
+                <img
+                  class="image-pic"
+                  src="../images/Picture of rainbow cartoon.png "
+                  alt="A picture of a cartoon rainbow"
+                />
+                <div class="image-overlay">
+                  <p class="image-answer">Purple 🟣</p>
+                </div>
+              </div>
+              <label for="fav-color">What is my favourite color?</label>
+              <ul>
+                <li>
+                  <input type="radio" name="fav-color" value="Purple" /> Purple
+                  🟣
+                </li>
+                <li>
+                  <input type="radio" name="fav-color" value="Red" />Red 🔴
+                </li>
+                <li>
+                  <input type="radio" name="fav-color" value="Blue" />Blue 🔵
+                </li>
+              </ul>
+            </li>
+            <li class="quiz-question">
+              <div class="image">
+                <img
+                  class="image-pic"
+                  src="../images/career-options.png "
+                  alt="A picture of career options"
+                />
+                <div class="image-overlay">
+                  <p class="image-answer">Medicine 👩‍⚕️</p>
+                </div>
+              </div>
+              <label for="career"
+                >What career path did I explore before computer science?</label
+              >
+              <ul>
+                <li>
+                  <input type="radio" name="career" value="Science" />Science 👩🏾‍🔬
+                </li>
+                <li><input type="radio" name="career" value="Law" />Law 👩🏾‍⚖️</li>
+                <li>
+                  <input type="radio" name="career" value="Medicine" />Medicine
+                  🩺
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+  <footer class="body-container-side-padding">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="Accessibilty.html">Acessibility</a></li>
+        <li><a href="Legal and security.html">Legal and Security</a></li>
+        <li><a href="Design.html">Design</a></li>
+        <li><a href="Testing.html">Testing</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="footer-text">&copy; Copyright, Folademilade Oyeleke, 2022</p>
+  </footer>
+</html>

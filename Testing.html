@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Testing</title>
+    <meta name="author" content="Folademilade Oyeleke" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta
+      name="description"
+      content="This page contains the testing to ensure that performance is maximised"
+    />
+    <link rel="stylesheet" href="../css/mywebsite.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="body-container-side-padding">
+      <div class="logo-images">
+        <!-- the code below makes the logo a button to go back to the home page.-->
+        <a href="../index.html">
+          <img
+            src="/images/fo-15.svg"
+            alt="A logo of the author's Initials,F.O"
+            role="img"
+            class="white-logo"
+          />
+          <img
+            src="/images/fo-14.svg"
+            alt="A logo of the author's Initials,F.O but in a darker colour."
+            role="img"
+            class="black-logo"
+          />
+        </a>
+
+        <!-- This image is the same as the one above but in a different colour it and will be styled in the css file to only be displayed when the user 
+           hovers over the site logo. -->
+        <!-- svg images were used to enable the logo load fast,take up less space and still display in high resolution. -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../images/">Home</a></li>
+          <li><a href="Degree_program.html">Degree Programme</a></li>
+          <li><a href="SGA_and_mySkills.html">SGA and mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="testing"
+        class="body-container-side-padding body-container-top-padding content-box-wrapper"
+      >
+        <article id="optimisation" class="content-box">
+          <h1 class="title">Optimisation</h1>
+          <p class="content">
+            To make sure images load faster, svg images were used (in the logo)
+          </p>
+        </article>
+        <article id="validation" class="content-box">
+          <h2 class="title">Validation measures</h2>
+          <p class="content">
+            I used
+            <a
+              href="https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_upload"
+              >W3C CSS Validator
+            </a>
+            to validate my css code and it was validated and I was given this
+            badge:<br />
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img
+                style="border: 0; width: 88px; height: 31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"
+              />
+            </a>
+
+            <br />
+            I used Visual Studio Code to debug my HTML code and it found no
+            problems for any of the pages.
+          </p>
+        </article>
+        <article id="browser-validation" class="content-box">
+          <h2 class="title">Browser testing</h2>
+          <p class="content">
+            Below are chrome's lighthouse reports for different pages on my
+            website<br />
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse report for homepage.png"
+                alt=" Chrome Lighthouse report for the homepage"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the homepage.</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse report for contact page.png"
+                alt=" Chrome Lighthouse report for the contact page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the contact page.
+              </figcaption>
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse report design page.png"
+                alt=" Chrome Lighthouse report for the design page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the design page.</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/ligthhouse report legal.png"
+                alt=" Chrome Lighthouse report for the legal page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the legal page</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse accessibility.png"
+                alt=" Chrome Lighthouse report for the Accessibilty page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the Accesibilty page</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse quiz.png"
+                alt=" Chrome Lighthouse report for the quiz page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the quiz page.</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse sgamyskills.png"
+                alt=" Chrome Lighthouse report for the SGA and mySkills page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the SGA and mySkills
+                page</figcaption
+              >
+            </figure>
+            <figure class="content-picture">
+              <img
+                src="../images/lighthouse degree.png"
+                alt=" Chrome Lighthouse report for the Degree programme page"
+              />
+              <figcaption
+                >Chrome Lighthouse report for the Degree programme
+                page</figcaption
+              >
+            </figure>
+          </p>
+        </article>
+        <article id="wave" class="content-box">
+          <h2 class="title">Accessibility testing</h2>
+          <p class="content">
+            After running several tests on my website using a screen reader and
+            visual impairment simulator, I can confirm that my website is
+            accessible for people with different disabilities. All of my
+            elements are properly arranged and the colors on the page are easily
+            distinguishable.
+          </p>
+          <h2 class="title">WAVE report</h2>
+          <p class="content">
+            <figure class="content-picture">
+              <img
+                src="../images/wave report.png"
+                alt=" Accessibilty report for my website"
+              />
+              <figcaption>WAVE report for my website</figcaption>
+            </figure>
+
+            <br />
+            The errors on the contrast were constant throughout all my pages,
+            but I ignored them because the colors were distinguishable on the
+            visual impairment simulator. The errors are from the justified text,
+            which the screen reader worked perfectly with. So I ignored the
+            errors.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="body-container-side-padding">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="Accessibilty.html">Acessibility</a></li>
+          <li><a href="Legal and security.html">Legal and Security</a></li>
+          <li><a href="Design.html">Design</a></li>
+          <li><a href="Testing.html">Testing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="footer-text">&copy; Copyright, Folademilade Oyeleke, 2022</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessibilty</title>
+    <meta name="author" content="Folademilade Oyeleke" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta
+      name="description"
+      content="This page contains the accessibilty statement for the website and measures that were taken to maximise accessibilty."
+    />
+    <link rel="stylesheet" href="../css/mywebsite.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="body-container-side-padding">
+      <div class="logo-images">
+        <!-- the code below makes the logo a button to go back to the home page.-->
+        <a href="../index.html">
+          <img
+            src="../images/fo-15.svg"
+            alt="A logo of the author's Initials,F.O"
+            role="img"
+            class="white-logo"
+          />
+          <img
+            src="../images/fo-14.svg"
+            alt="A logo of the author's Initials,F.O but in a darker colour."
+            role="img"
+            class="black-logo"
+          />
+        </a>
+
+        <!-- This image is the same as the one above but in a different colour it and will be styled in the css file to only be displayed when the user 
+           hovers over the site logo. -->
+        <!-- svg images were used to enable the logo load fast,take up less space and still display in high resolution. -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Degree_program.html">Degree Programme</a></li>
+          <li><a href="SGA_and_mySkills.html">SGA and mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="acessibilty"
+        class="body-container-side-padding body-container-top-padding content-box-wrapper"
+      >
+        <article id="acessibilty-statement" class="content-box">
+          <h1 class="title">Accessibilty Statement</h1>
+          <p class="content">
+            This website is designed to be accessible to as many people as
+            possible. The content is zoomable, so you can enlarge it if you need
+            to. It's also compatible with screen readers, so people who are
+            blind or have low vision can access the information. The two main
+            colours used on the website are easy to distinguish, so people with
+            visual impairments can easily see the information.
+          </p>
+        </article>
+        <article id="measures-for-accessibilty" class="content-box">
+          <h2 class="title">Measures I took to maximise accessibilty</h2>
+          <p class="content">
+            I used the rem measurement unit, in case a user wants to zoom into
+            the page to see the content better. According to
+            <a
+              href="https://www.freecodecamp.org/news/what-is-rem-in-css/#:~:text=Using%20REM%20(or%20another%20relative,due%20to%20a%20visual%20impairment."
+              >freeCodeCamp</a
+            >
+            , REM is a good value to use for font-size because it is relative to
+            the default font-size set by the user, meaning that it will resize
+            accordingly if the user needs to zoom in. This is important for
+            accessibility, as some users may need to zoom in up to 400% in order
+            to read the text.
+
+            <br />
+            <br />
+            I made sure that all my images have descriptive alt captions to aid
+            smooth running of a screen reader for users with visual impairments.
+            The alt text is an important part of accessible web design. Its
+            original purpose is to describe images to visitors who are unable to
+            see them. This includes screen readers and browsers that block
+            images, but it also includes users who are sight-impaired or
+            otherwise unable to visually identify an image. Including alt text
+            with your images ensures that all users, regardless of visual
+            ability, can appreciate the content on your site.(<a
+              href="https://moz.com/learn/seo/alt-text"
+              >MOZ</a
+            >)
+            <br />
+            <br />
+            I mades sure that my color scheme was simple and there was a high
+            contrast between them.I also ensured that no information was
+            dependent on color to be conveyed.
+            <br />
+            <br />
+            I used role="img" for the svg images so screen readers recognise
+            them as images.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="body-container-side-padding">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="Accessibilty.html">Acessibility</a></li>
+          <li><a href="Legal and security.html">Legal and Security</a></li>
+          <li><a href="Design.html">Design</a></li>
+          <li><a href="Testing.html">Testing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="footer-text">&copy; Copyright, Folademilade Oyeleke, 2022, 2022</p>
+    </footer>
+  </body>
+</html>
