@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #48267f;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+  min-width: 320px;
+  text-align: justify;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea {
+  font: inherit;
+  appearance: none;
+  border: none;
+}
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+main {
+  min-height: 80vh;
+  /* to ensure the footer is always at the bottom of the page */
+}
+
+/* Utility classes */
+.body-container-side-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.body-container-top-padding {
+  padding-top: 30px;
+}
+.content-box-wrapper {
+  padding-bottom: 25px;
+}
+.content-box {
+  margin-bottom: 25px;
+}
+.content-box .title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.content-box .content {
+  font-size: 1rem;
+}
+.content-picture img {
+  width: 100%;
+}
+
+header {
+  background-color: #7f73ea;
+  box-shadow: 0px 0px 20px #48267f;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+header nav {
+  position: relative;
+}
+/* The following set of commands make the logo switch to a different
+image (same logo but different color) when the user hovers over it  */
+.logo-images .black-logo {
+  display: none;
+}
+.logo-images:hover .black-logo {
+  display: unset;
+}
+.logo-images:hover .white-logo {
+  display: none;
+}
+.logo-images img {
+  height: 30px;
+}
+/* End. */
+nav {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  padding: 5px 0;
+  margin-right: 9px;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  white-space: nowrap;
+}
+nav a:link {
+  color: white;
+}
+nav a:hover {
+  color: #48267f;
+}
+
+/* home page css */
+#welcome-section {
+  margin-bottom: 50px;
+}
+#welcome-section-wrapper {
+  display: block;
+}
+
+#welcome-section-wrapper #profile-pic {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+#welcome-section-wrapper #profile-pic img {
+  width: 80%;
+  box-shadow: -20px 15px #7f73ea;
+  border-radius: 13px;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-top {
+  background-color: #e3d8ee;
+  border-radius: 14px;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: -1px 2px 20px 1px #b8c5c4;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-top #welcome {
+  padding: 8px;
+  color: #2e2488;
+  font-size: 1.6rem;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-top #text {
+  padding: 12px 21px;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-bottom {
+  box-shadow: -1px 2px 20px 1px #b8c5c4;
+  border-radius: 14px;
+  width: 100%;
+  background-color: #d1eae4;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-bottom #fun-facts {
+  padding: 8px;
+  color: #203b35;
+  font-size: 1.6rem;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-bottom #facts {
+  border-radius: 14px;
+  padding: 12px 21px;
+  color: #203b35;
+}
+#welcome-section-wrapper #text-container-wrapper .textbox-bottom #facts {
+  list-style-position: inside;
+}
+#educational-background-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 80px;
+}
+
+#educational-background #educational-background-heading {
+  text-align: center;
+  padding: 9px;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+#educational-background #educational-background-content {
+  color: black;
+}
+footer {
+  background-color: #7f73ea;
+  padding: 20px 60px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.875rem;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer nav li {
+  font-size: 0.875rem;
+}
+
+#footer-text {
+  text-align: center;
+  color: white;
+}
+
+/* Degree program page css*/
+
+.brief-intro {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.brief-intro .intro {
+  color: #48267f;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.intro-content {
+  text-align: center;
+  font-size: 1.05rem;
+  color: black;
+}
+
+#mycourse-container-wrapper {
+  margin-bottom: 70px;
+}
+.mycourse-container {
+  background-color: #e3d8ee;
+  box-shadow: 0px 0px 20px #e3d8ee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 2rem;
+}
+.mycourse-container:last-child {
+  /* targets the last child element with the class of "mycourse-container" */
+  margin-bottom: 0;
+}
+.mycourse-container.green-color {
+  background-color: #d1eae4;
+  box-shadow: 0px 0px 20px #d1eae4;
+}
+.mycourse-container .course-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.mycourse-container img {
+  height: 100px;
+}
+figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.mycourse-container h2 {
+  color: white;
+  text-align: center;
+  background-color: #7f73ea;
+  font-size: 1rem;
+}
+.mycourse-container.green-color h2 {
+  background-color: #4cbfa6;
+}
+.mycourse-container p {
+  padding: 15px;
+  text-align: center;
+}
+.mycourse-container.green-color p {
+  color: #203b35;
+}
+
+/*SGA and mySkills css*/
+
+#sga {
+  background-color: #d1eae4;
+  width: fit-content;
+  padding: 5%;
+  margin-bottom: 3.125rem;
+}
+
+#sga #sga-heading {
+  color: #203b35;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+#sga #sga-body {
+  color: #203b35;
+}
+#myskills {
+  background-color: #e3d8ee;
+  padding: 5%;
+  color: #2e2488;
+  margin-bottom: 50px;
+}
+#myskills #myskills-heading {
+  text-align: center;
+}
+#skills-wrapper {
+  padding-top: 5%;
+}
+.skill {
+  padding: 5%;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+/*Contact page CSS*/
+.contact-wrapper {
+  padding: 5%;
+}
+#contact-information-container {
+  background-color: #d1eae4;
+  width: 100%;
+  color: #192724;
+  padding: 5%;
+  margin-bottom: 1.125rem;
+}
+#contact-information-container #contact-information-heading {
+  text-align: center;
+}
+#contact-information-container #contact-information-content {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  font-size: 1rem;
+}
+#contact-form-wrapper {
+  align-content: center;
+  width: 100%;
+  padding: 5%;
+  background-color: #e3d8ee;
+}
+#form-heading {
+  text-align: center;
+}
+#contact-form ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+#contact-form li {
+  margin-bottom: 10px;
+}
+#contact-form label {
+  font-size: 0.9rem;
+}
+#contact-form input,
+#contact-form textarea {
+  margin-top: 3px;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.submit-button {
+  width: 100%;
+  background-color: #48267f;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+/* CSS for the quiz section */
+.quiz-wrapper {
+  padding-bottom: 50px;
+}
+.quiz-heading {
+  margin-bottom: 2.375rem;
+  text-align: center;
+}
+.quiz-heading h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.quiz-question {
+  margin-bottom: 25px;
+  color: black;
+}
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* These set of commands reveal the answer to the question when the user hovers over the image */
+.quiz-question .image {
+  position: relative;
+  width: 100%;
+  padding: 0 10%;
+  margin-bottom: 10px;
+}
+.quiz-question .image-pic {
+  display: block;
+  width: 100%;
+}
+.quiz-question .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.quiz-question .image-overlay:hover {
+  opacity: 1;
+}
+.quiz-question .image-answer {
+  font-size: 1.2rem;
+}
+/* end. */
+.quiz-wrapper article h1 {
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  /* Utility classes */
+  .body-container-side-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .body-container-top-padding {
+    padding-top: 60px;
+  }
+  .content-picture img {
+    width: 400px;
+  }
+  .content-picture {
+    width: fit-content;
+  }
+  .content-picture figcaption {
+    font-size: 0.9rem;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo-images img {
+    height: 35px;
+  }
+  nav ul li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    margin-right: 9px;
+  }
+  #welcome-section-wrapper #profile-pic img {
+    width: 350px;
+  }
+  #welcome-section-wrapper #text-container-wrapper .textbox-top #welcome,
+  #welcome-section-wrapper #text-container-wrapper .textbox-bottom #fun-facts {
+    font-size: 1.8rem;
+  }
+  #educational-background #educational-background-heading {
+    font-size: 1.8rem;
+  }
+  #educational-background #educational-background-content {
+    font-size: 1.15rem;
+  }
+  .quiz-wrapper {
+    font-size: 1.125rem;
+  }
+  .quiz-question {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz-question .image {
+    width: 300px;
+    padding: 0;
+  }
+
+  .image {
+    position: relative;
+    width: 478px;
+    padding: 0 5%;
+  }
+  .mycourse-container p {
+    font-size: 1rem;
+  }
+  .mycourse-container h2 {
+    font-size: 1.125rem;
+  }
+  .submit-button {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .body-container-side-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #welcome-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcome-section-wrapper #profile-pic {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  #sga,
+  #myskills,
+  .skill {
+    padding: 2.5rem;
+  }
+  #skills-wrapper {
+    padding-top: 2.5rem;
+  }
+  /* The display was changed to grid to help show the items side-by-side. */
+  #mycourse-container-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  .mycourse-container {
+    margin-bottom: 0;
+  }
+
+  #contact-information-container #contact-information-content {
+    font-size: 1.125rem;
+  }
+}
